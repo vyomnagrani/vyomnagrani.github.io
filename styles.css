@@ -4,7 +4,7 @@
     --secondary-color: #0984e3;
     --text-color: #2d3436;
     --background-color: #ffffff;
-    --section-padding: 80px 0;
+    --section-padding: 48px 0;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
 }
 
 .nav {
-    padding: 1rem 0;
+    padding: 0.75rem 0;
 }
 
 .nav-content {
@@ -72,51 +72,43 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 104px;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .hero-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .hero-text {
-    flex: 1;
+    text-align: center;
 }
 
 .hero-image {
-    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+.hero-profile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
     border: 4px solid var(--background-color);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
 }
 
 .hero h2 {
     font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--secondary-color);
 }
 
@@ -133,7 +125,7 @@ section {
 
 section h2 {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: var(--primary-color);
 }
@@ -142,10 +134,23 @@ section h2 {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-profile-image {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--background-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
 }
 
@@ -157,13 +162,13 @@ section h2 {
 }
 
 .timeline-item {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
 .timeline-content {
     background: var(--background-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -181,21 +186,21 @@ section h2 {
 .timeline-content .date {
     color: #666;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Education Section */
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.25rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .education-card {
     background: var(--background-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -230,14 +235,14 @@ section h2 {
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.25rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .certification-card {
     background: var(--background-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -267,14 +272,14 @@ section h2 {
 .publications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.25rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .publication-card {
     background: var(--background-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -286,7 +291,7 @@ section h2 {
 }
 
 .publication-card h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .publication-list {
@@ -294,7 +299,7 @@ section h2 {
 }
 
 .publication-list li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .publication-list a {
@@ -321,14 +326,14 @@ section h2 {
 .leadership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.25rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .leadership-card {
     background: var(--background-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -348,8 +353,8 @@ section h2 {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .social-link {
@@ -366,28 +371,24 @@ section h2 {
 .footer {
     background: var(--primary-color);
     color: var(--background-color);
-    padding: 2rem 0;
+    padding: 1.25rem 0;
     text-align: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content {
-        flex-direction: column;
         text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
     }
 
     .hero h2 {
         font-size: 1.5rem;
     }
 
-    .profile-image {
-        width: 250px;
-        height: 250px;
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
     }
 
     .nav-links {
@@ -396,16 +397,12 @@ section h2 {
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
     .hero h2 {
         font-size: 1.2rem;
     }
 
-    .profile-image {
-        width: 200px;
-        height: 200px;
+    .about-profile-image {
+        width: 180px;
+        height: 180px;
     }
-} 
+}

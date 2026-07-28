@@ -8,7 +8,8 @@ This site showcases Vyom Nagrani's background, experience, education, certificat
 
 - `index.html` — Main HTML file for the website.
 - `styles.css` — Custom CSS styles for layout and design.
-- `VyomNagraniProfile.jpg` — Profile image used on the homepage.
+- `VyomNagraniProfileInfo.png` — Profile overview displayed in the homepage hero.
+- `VyomNagraniProfile.jpg` — Portrait displayed in the About Me section.
 
 ### 🛠️ Features
 
@@ -19,7 +20,7 @@ This site showcases Vyom Nagrani's background, experience, education, certificat
 
 ### 🖼️ Preview
 
-![Website Screenshot](VyomNagraniProfile.jpg)
+![Website Profile Overview](VyomNagraniProfileInfo.png)
 
 ### 📦 Getting Started
 
@@ -35,7 +36,8 @@ To view or modify the site locally:
 
 - Update `index.html` to change content or add new sections.
 - Modify `styles.css` for custom styles or color schemes.
-- Replace `VyomNagraniProfile.jpg` with a new profile image if desired.
+- Replace `VyomNagraniProfileInfo.png` to update the hero overview.
+- Replace `VyomNagraniProfile.jpg` to update the About Me portrait.
 
 ### 📬 Contact
 
